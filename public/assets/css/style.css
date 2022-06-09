@@ -1,0 +1,248 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins&display=swap');
+
+color-theme #D1B280
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* font */
+
+.font-bebasNeue {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* font color */
+.text-gold {
+    color: #D1B280;
+}
+
+.text-grey {
+    color: #594d46;
+}
+
+/* awal footer */
+#socmed_kami > div > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: small;
+}
+
+/* #socmed_kami > div > div > i {
+    font-size: 1.3rem;
+} */
+
+/* akhir footer */
+
+
+.active {
+    font-weight: bold !important;
+    color: #D1B280!important;
+    text-decoration: underline;
+}
+
+.logo_wibaku {
+    font-family: 'Pacifico', cursive;
+}
+
+.btn-outline-theme {
+    border-color: #D1B280;
+    border-width: 2px;
+    color: white;
+}
+
+#eye_password {
+    left: 73%;
+    float: right;
+}
+
+#btn_daftar {
+    width: 100px;
+}
+
+.br-1 {
+    border-radius: 1em;
+}
+
+.br-2 {
+    border-radius: 2em;
+}
+
+.vh-10 {
+    height: 10vh;
+}
+
+.vh-90 {
+    height: 90vh;
+}
+
+.w-30x {
+    width: 30em;
+}
+
+.mt-10vh {
+    margin-top: 10vh;
+}
+
+.pt-10vh {
+    padding-top: 10vh;
+}
+
+.min-vh-90 {
+    min-height: 90vh;
+}
+
+.min-vh-10 {
+    min-height: 10vh;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+#login_main {
+    /* margin-top: 10vh; */
+    filter: grayscale(0);
+}
+
+#login_main > img {
+    filter: grayscale(1);
+    opacity: 0.8;
+}
+
+#login_main form {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#btn_daftar {
+    text-align: center;
+}
+
+/* h1 {
+    font-size: 10vmin;
+}
+
+h2 {
+    font-size: 8vmin;
+}
+
+h3 {
+    font-size: 6vmin;
+}
+
+h4 {
+    font-size: 4vh;
+} */
+
+
+/* #objek_wisata_login {
+    background-image: url("https://www.tempatwisata.pro/users_media/3092/Candi-Badut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+} */
+
+/* home.html */
+#home_main section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#home_main #fitur .container div.row {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+/* #home_main #fitur .card .row img {
+    height: 60%;
+    width: 60%;
+} */
+
+#home_main #fitur .card .row .card-body {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+#home_main #fitur div.container div.row .card  {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#home_main #fitur .card-title {
+    font-size: 80%;
+}
+
+#home_main #fitur .card-text { 
+    font-size: 70%;
+}
+
+/* tentang.html */
+
+#tentang_kami .row .card {
+    height: 100%;
+}
+
+#objek_wisata_background {
+    /* background-image: url("https://wisatarakyat.com/wp-content/uploads/2020/09/candi-badut-malang.jpg"); */
+    /* background-size: cover; */
+    opacity: 0.8;
+    filter: grayscale(0.7);
+}
+
+/* #objek_wisata > div {
+    bottom: 50px;
+} */
+
+/* #objek_wisata > * {
+    position: relative;
+} */
+
+/*untuk layar device berukuran kecil*/
+@media screen and (min-width: 576px) {
+ }
+  
+ /*untuk layar device berukuran sedang*/
+ @media screen and (min-width: 768px) {
+    .vh-md-10 {
+        height: 10vh;
+    } 
+
+    .vh-md-90 {
+        height: 90vh;
+    } 
+
+    .w-md-20x {
+        width: 20em;
+    }
+
+    .w-md-75 {
+        width: 75% !important;
+    }
+
+    /* font color */
+    .text-md-gold {
+        color: #D1B280;
+    }
+}
+  
+ /*untuk layar device berukuran besar*/
+ @media screen and (min-width: 992px) {
+     .vh-lg-90 {
+         height: 90vh;
+     }
+
+     .w-lg-20x {
+        width: 20em;
+    }
+
+    #main_body header nav .collapse:last-child li {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+ }
