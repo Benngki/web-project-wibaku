@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CandiBadutController;
+use App\Http\Controllers\DaftarController;
+use App\Http\Controllers\MasukController;
+
+
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,63 +25,72 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 
+
 // memberikan data berupa nama dari route ke view 
-Route::get('/', function () {
-    return view('home', ['testimoni' => ['azizi'   => ['nama' => 'Azizi',
-                                                    'pesan' => '“Website Candi Badut fiturnya banyak banget. Candi Badut juga instagramable buat foto-foto. Makasih WiBaKu Team. <3”',
-                                                    'img' => 'assets/img/Testimoni_Azizi.png'],
-                                        'hayley'  => ['nama' => 'Hayley',
-                                                    'pesan' => '“Website ini sangat membantu saya menelusuri Candi Badut yang ada di Malang, Jawa Timur. Karena saya hanya tau Bali saja XD”',
-                                                    'img' => 'assets/img/Testimoni_Hayley.png'],
-                                        'ronaldo' => ['nama' => 'Ronaldo',
-                                                    'pesan' => '“Indonesia negara yang indah. Website ini membantu saya dalam memesan tiket masuk Candi Badut. Hehehe. Siuuu.”',
-                                                    'img' => 'assets/img/Testimoni_Ronaldo.png']
-                                        ],
-                        'fitur' => ['testimoni' => ['nama' => 'Testimoni',
-                                                    'desc' => 'Pengguna dapat mengirim dan melihat testimoni dari pengguna lain yang telah menggunakan website Candi Badut.',
-                                                    'img'  => 'assets/img/Icon Testimoni.png'
-                                                    ],
-                                    'sejarah'   => ['nama' => 'Sejarah',
-                                                    'desc' => 'Pengguna dapat membaca dan mendengarkan sejarah dari objek wisata Candi Badut.',
-                                                    'img'  => 'assets/img/Icon Sejarah.png'
-                                                    ],
-                                    'pesan tiket' => ['nama' => 'Pesan Tiket',
-                                                    'desc' => 'Pengguna dapat memesan tiket objek wisata Candi Badut melalui website kami.',
-                                                    'img'  => 'assets/img/Icon Pesan Tiket.png'
-                                                    ],
-                                    'bawa saya ke sana'   => ['nama' => 'Bawa Saya ke Sana',
-                                                    'desc' => 'Pengguna dapat mengetahui lokasi dari objek wisata Candi Badut dan akan diarahkan melalui Google Street View.',
-                                                    'img'  => 'assets/img/Icon Bawa Saya ke Sana.png'
-                                                    ],
-                                    'stan foto'   => ['nama' => 'Stan Foto',
-                                                    'desc' => 'Pengguna dapat menggunakan filter instagram WiBaKu dengan latar belakang objek wisata Candi Badut.',
-                                                    'img'  => 'assets/img/Icon Stan Foto.png'
-                                                    ],
-                                    'augmented reality'   => ['nama' => 'Augmented Reality',
-                                                    'desc' => 'Pengguna dapat menggunakan filter AR objek wisata Candi Badut melalui instagram WiBaKu.',
-                                                    'img'  => 'assets/img/Icon Augmented Reality.png'
-                                                ],
-                                    'tur virtual 360*'   => ['nama' => 'Tur Virtual 360°',
-                                                    'desc' => 'Pengguna dapat melakukan tur virtual secara 360° objek wisata Candi Badut.',
-                                                    'img'  => 'assets/img/Icon Tur Virtual 360.png'
-                                                    ],
-                                    'galeri foto'   => ['nama' => 'Galeri Foto',
-                                                    'desc' => 'Pengguna dapat melihat kumpulan foto menarik dari objek wisata Candi Badut.',
-                                                    'img'  => 'assets/img/Icon Galeri Foto.png'
-                                                    ]
-                                    ]
-                        ]);
-});
+Route::get('/', [HomeController::class, 'index']);
 
                                                     // ['nama' => 'testimoni',
                                                     // 'desc' => '',
                                                     // 'img'  => ''
                                                     // ]
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/daftar', function () {
+    return view('daftar.index');
 });
+
+Route::post('/daftar', [DaftarController::class, 'store']);
+
+Route::get('/masuk', function () {
+    return view('masuk');
+})->middleware('guest');
+
+Route::post('/masuk', [MasukController::class, 'authenticate']);
+
+Route::get('/user/keluar', [Controller::class, 'keluar']);
+
+Route::get('/user/ubah-password', function () {
+    return view('ubah-password');
+});
+
+Route::post('/user/ubah-password', [Controller::class, 'ubahPassword']);
 
 Route::get('/tentang-kami', function () {
     return view('tentang');
 });
+
+Route::get('/objek-wisata', function () {
+    return view('objek-wisata');
+});
+
+Route::get('/objek-wisata/candi-badut', [CandiBadutController::class, 'index']);
+
+Route::get('/objek-wisata/candi-badut/sejarah', function() {
+    return view('sejarah-candi-badut');
+});
+
+Route::get('/objek-wisata/candi-badut/stan-foto', function() {
+    return view('stan-foto');
+});
+
+Route::get('/objek-wisata/candi-badut/augmented-reality', function() {
+    return view('AR');
+});
+
+
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
+
+Route::get('/objek-wisata/candi-badut/pesan-tiket', function () {
+    return view('pesan-tiket');
+});
+
+Route::post('/objek-wisata/candi-badut/pesan-tiket', [Controller::class, 'pesanTiket']);
+
+
+
+Route::get('/user/tiket', function () {
+    return view('data-tiket');
+});
+
+Route::post('/test', [TestController::class, 'index']);

@@ -11,6 +11,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
+    <!-- owl carousel css link -->
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+      
+    <!-- owl carousel theme.css link -->
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">   --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.css') }}">
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a72340eb77.js" crossorigin="anonymous"></script>
     
@@ -18,9 +26,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     {{-- Icon Wibaku --}}
-    <link rel="shortcut icon" href="{{asset('assets/img/Icon WIBAKU.png')}}">
+    <link rel="shortcut icon" href="{{asset('assets/img/Logo Candi Badut Putih Polosan.png')}}">
 
-    <title>WIBAKU</title>
+    <link href="{{ asset('assets/css/form-validation.css') }}" rel="stylesheet">
+
+    <title>@yield('title')CANDI BADUT</title>
+
+    {{-- Custom CSS --}}
+    @yield('css')
+    
   </head>
   <body>    
 
@@ -29,6 +43,8 @@
     @yield('main')
 
     @include('layouts.footer')
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -42,6 +58,12 @@
    
     <!-- Custom JS -->
     <script src="{{asset('assets/js/style.js')}}"></script>
+
+    <!-- owl carousel js file -->
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> --}}
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/form-validation.js') }}"></script>
 
     @yield('script')
 

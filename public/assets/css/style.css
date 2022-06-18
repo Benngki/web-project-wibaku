@@ -1,7 +1,11 @@
 /* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Pacifico&family=Poppins&display=swap');
 
-color-theme #D1B280
+
+:root {
+    --primary-color: #D1B280;
+    --second-color: #594d46;
+}
 
 html {
     scroll-behavior: smooth;
@@ -11,47 +15,135 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.bg-gold {
+    background-color: var(--primary-color);
+}
+
+/* text */
+.text-justify {
+    text-align: justify;
+}
+
 /* font */
 
 .font-bebasNeue {
     font-family: 'Bebas Neue', cursive;
 }
 
+.font-pasifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.font-arial {
+    font-family: "arial";
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+
 /* font color */
 .text-gold {
-    color: #D1B280;
+    color: var(--primary-color);
 }
 
 .text-grey {
-    color: #594d46;
+    color: var(--second-color);
 }
 
-/* awal footer */
-#socmed_kami > div > div {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: small;
+/* border color */
+
+.border-gold {
+    border-color: var(--primary-color)!important;
 }
 
-/* #socmed_kami > div > div > i {
-    font-size: 1.3rem;
-} */
+/* 
+    FOOTER
+*/
+footer #socmed_kami a {
+    font-size: 0px;
+}
 
-/* akhir footer */
+@media screen and (min-width: 576px) {
+    footer #socmed_kami a {
+        font-size: var(--bs-body-font-size);
+    }   
+}
 
 
-.active {
+
+/* awal scroll top button */
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 995;
+    background: var(--second-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    /* text-decoration: none!important; */
+}
+.scroll-top i {
+    font-size: 24px;
+    color: white;
+    line-height: 0;
+}
+.scroll-top:hover {
+    background: rgba(var(--second-colorb), 0.85);
+    color: var(--color-white);
+}
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
     font-weight: bold !important;
-    color: #D1B280!important;
+    color: white;
+    text-decoration: none;
+}
+
+/* akhir scroll top button */
+
+
+/* 
+    HEADER
+ */
+@media screen and (min-width: 992px) {
+    body > header > nav > div > a {
+        position: static!important;
+        transform: translateX(0%)!important;
+        left: 0%!important;
+    }
+}
+
+body > header > nav > div > a {
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    top: 0%;
+}
+
+
+#navbarNav #menu > li > a.active, #navbarNav > ul:nth-child(2) > li:nth-child(1) > a.active {
+    font-weight: bold !important;
+    color: var(--primary-color)!important;
     text-decoration: underline;
 }
+
+nav .collapse ul li .img-profile {
+    height: 5vh;
+}
+
 
 .logo_wibaku {
     font-family: 'Pacifico', cursive;
 }
 
 .btn-outline-theme {
-    border-color: #D1B280;
+    border-color: var(--primary-color);
     border-width: 2px;
     color: white;
 }
@@ -81,12 +173,40 @@ body {
     height: 90vh;
 }
 
+.h-2r {
+    height: 2rem;
+}
+
+.h-3r {
+    height: 3rem;
+}
+
 .w-30x {
     width: 30em;
 }
 
+.w-2r {
+    width: 2rem;
+}
+
+.w-7r {
+    width: 7rem;
+}
+
+.w-10r {
+    width: 10rem;
+}
+
+.w-15r {
+    width: 15rem;
+}
+
 .mt-10vh {
     margin-top: 10vh;
+}
+
+.mr-0_5r {
+    margin-right: 0.5rem;
 }
 
 .pt-10vh {
@@ -105,50 +225,142 @@ main {
     margin-top: 10vh;
 }
 
-#login_main {
-    /* margin-top: 10vh; */
-    filter: grayscale(0);
-}
 
-#login_main > img {
-    filter: grayscale(1);
-    opacity: 0.8;
-}
 
-#login_main form {
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 #btn_daftar {
     text-align: center;
 }
 
-/* h1 {
-    font-size: 10vmin;
+
+
+
+/* 
+    Owl Carousel 
+*/
+#testimoni .owl-carousel > div {
+    height: 100%;
 }
 
-h2 {
-    font-size: 8vmin;
+#testimoni .owl-carousel .card {
+    background-color: rgba(8, 7, 6, 0.5);
+    margin: 0 1rem 0 1rem;
+    border-radius: 1rem;
+    /* height: 100%; */
+    justify-content: center;
+    padding-top: 1rem;
 }
 
-h3 {
-    font-size: 6vmin;
+#testimoni .owl-carousel .owl-nav .owl-prev {
+    left: -27.4062px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: black;
 }
 
-h4 {
-    font-size: 4vh;
-} */
+#testimoni .owl-carousel .owl-nav .owl-next {
+    right: -27.4062px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: black;
+}
+
+#testimoni .owl-carousel .owl-nav .owl-prev, #testimoni .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+}
+
+#testimoni .owl-carousel .card .card-body {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+#testimoni .owl-carousel img.card-img-top {
+    height: 30vmin;
+    width: auto;
+    object-fit: contain;
+}
+
+#testimoni .owl-carousel .owl-stage {
+    align-items: stretch;
+}
+
+#testimoni .owl-carousel .owl-stage, 
+#testimoni .owl-carousel .owl-stage .owl-item, 
+#testimoni .owl-carousel .owl-stage .owl-item .card  {
+    display: flex;
+    /* align-self: stretch; */
+    /* height: 100%; */
+}
+
+#testimoni .owl-carousel .owl-stage .owl-item .card {
+    justify-content: start;
+}
 
 
-/* #objek_wisata_login {
-    background-image: url("https://www.tempatwisata.pro/users_media/3092/Candi-Badut.jpg");
-    background-repeat: no-repeat;
+/* 
+    HALAMAN MASUK DAN DAFTAR
+*/ 
+
+main#login_main,
+main#ubah-password,
+main#daftar {
+    background-image: url('../img/Background Halaman Masuk (Login) Hitam\ _ Putih Blur.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
-} */
+}
 
-/* home.html */
+#login_main form, 
+main#ubah-password form,
+main#daftar form {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#login_main form p, 
+main#ubah-password form p,
+main#daftar form p {
+    margin: 0.5rem 0 0 0;
+}
+
+#login_main .checkbox 
+main#ubah-password .checkbox,
+main#daftar .checkbox{
+  font-weight: 400;
+}
+
+#login_main .form-floating,
+main#ubah-password .form-floating,
+main#daftar .form-floating {
+  margin-bottom: 1rem;
+}
+
+#login_main .form-floating:focus-within,
+main#ubah-password .form-floating:focus-within
+main#daftar .form-floating:focus-within {
+  z-index: 2;
+}
+
+#login_main input[type="email"],
+main#ubah-password input[type="email"],
+main#daftar input[type="email"] {
+  /* margin-bottom: -1px; */
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#login_main input[type="password"],
+main#ubah-password input[type="password"],
+main#daftar input[type="password"] {
+  /* margin-bottom: 10px; */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+
+/* start of page home */
 #home_main section {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -182,11 +394,44 @@ h4 {
     font-size: 70%;
 }
 
-/* tentang.html */
-
-#tentang_kami .row .card {
-    height: 100%;
+#home_main section#fitur .row .col .fitur-item  {
+    transition: all ease-in-out 0.4s;
 }
+
+#home_main section#fitur .row .col .fitur-item:hover  {
+    transform: translateY(-10px);
+    animation-duration: 2s;    
+    box-shadow: 0px 0px 30px;
+}
+
+/* end of page home */
+
+
+
+/*
+    PAGE TENTANG
+*/
+#tentang_kami img.w-100 {
+    height: auto;
+}
+
+#pendiri .card img {
+    margin-top: 1rem;
+    max-height: 30vmax;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 992px) {
+    #pendiri .card img {
+        max-height: 20vmin;
+    }    
+}
+
+#pendiri .card .card-body ul {
+    margin-bottom: 0;
+}
+
+
 
 #objek_wisata_background {
     /* background-image: url("https://wisatarakyat.com/wp-content/uploads/2020/09/candi-badut-malang.jpg"); */
@@ -203,8 +448,120 @@ h4 {
     position: relative;
 } */
 
+/* page objek wisata */
+main#objek_wisata .card {
+    width: 20rem; 
+    height: 10rem;
+    background-color: aqua;
+    background-image: url('../img/Candi Badut Hitam _ Putih.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+/*
+    PAGE CANDI BADUT
+*/
+main#candi_badut section:first-child {
+    background-image: url('../img/Candi Badut Hitam _ Putih.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main#candi_badut > section:first-child .row .col {
+    display: flex;
+    margin: auto;
+}
+
+main#candi_badut > section:first-child .row .col:nth-child(7) {
+    margin: 0px 0px 0px auto;
+}
+
+main#candi_badut > section:first-child .row .col:nth-child(8) {
+    margin: 0px auto 0px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    main#candi_badut > section:first-child .row .col:nth-child(7) {
+        margin: auto;
+    }
+    
+    main#candi_badut > section:first-child .row .col:nth-child(8) {
+        margin: auto;
+    }
+}
+
+main#candi_badut > section:first-child .row .col a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main#candi_badut section#testimoni {
+    display: flex;
+}
+
+main#candi_badut section#testimoni .container {
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* 
+    Carousel On Candi Badut Page
+*/
+#galeri-foto > div > div {
+    max-width: min-content;
+}
+
+#galeri-foto-carousel > div.carousel-inner > div > img {
+    height: 100%;
+    width: auto;
+    max-width: 80vmin;
+}
+
+@media screen and (min-width: 992px) {
+    #galeri-foto-carousel > div.carousel-inner > div > img {
+        max-height: 65vmin;
+    }    
+}
+
+/* start of Page sejarah candi badut*/
+/* a.prev-button {
+    color: rgba(8, 7, 6, 0.5); 
+    transform: rotate(180deg);
+} */
+
+a.prev-button i {
+    color: rgba(8, 7, 6, 0.5); 
+    transform: rotate(180deg);
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 50%; 
+}
+/* end of Page sejarah candi badut*/
+
+
+/* page stan foto */
+main#stan-foto .row .col div > img:hover {
+    transition: all ease-in-out 0.4s;
+}
+main#stan-foto .row .col div > img:hover {
+    transform: translateY(-10px);
+    animation-duration: 2s;    
+    box-shadow: 0px 0px 30px;
+}
+
 /*untuk layar device berukuran kecil*/
 @media screen and (min-width: 576px) {
+    .vh-sm-90 {
+        height: 90vh;
+    }
  }
   
  /*untuk layar device berukuran sedang*/
@@ -225,9 +582,17 @@ h4 {
         width: 75% !important;
     }
 
+    .w-md-100 {
+        width: 100%;
+    }
+
+    .mb-md-5r{
+        margin-bottom: 5rem;
+    }
+
     /* font color */
     .text-md-gold {
-        color: #D1B280;
+        color: var(--primary-color);
     }
 }
   
@@ -239,6 +604,10 @@ h4 {
 
      .w-lg-20x {
         width: 20em;
+    }
+
+    .w-lg-15x {
+        width: 15em;
     }
 
     #main_body header nav .collapse:last-child li {
