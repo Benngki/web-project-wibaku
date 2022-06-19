@@ -36,7 +36,7 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/daftar', function () {
     return view('daftar.index');
-});
+})->middleware('guest');
 
 Route::post('/daftar', [DaftarController::class, 'store']);
 
@@ -46,11 +46,11 @@ Route::get('/masuk', function () {
 
 Route::post('/masuk', [MasukController::class, 'authenticate']);
 
-Route::get('/user/keluar', [Controller::class, 'keluar']);
+Route::get('/user/keluar', [Controller::class, 'keluar'])->middleware('auth');
 
 Route::get('/user/ubah-password', function () {
     return view('ubah-password');
-});
+})->middleware('auth');
 
 Route::post('/user/ubah-password', [Controller::class, 'ubahPassword']);
 
@@ -76,21 +76,8 @@ Route::get('/objek-wisata/candi-badut/augmented-reality', function() {
     return view('AR');
 });
 
-
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// });
-
 Route::get('/objek-wisata/candi-badut/pesan-tiket', function () {
     return view('pesan-tiket');
 });
 
 Route::post('/objek-wisata/candi-badut/pesan-tiket', [Controller::class, 'pesanTiket']);
-
-
-
-Route::get('/user/tiket', function () {
-    return view('data-tiket');
-});
-
-Route::post('/test', [TestController::class, 'index']);

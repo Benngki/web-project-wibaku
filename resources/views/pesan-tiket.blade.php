@@ -57,7 +57,7 @@
                     <div class="row g-3">
                       <div class="col-12">
                         <label for="firstName" class="form-label">Nama Lengkap</label>
-                        <input type="text" class="form-control" name="name" id="nama-lengkap" placeholder="" value="{{ Auth::user()->name }}" required>
+                        <input type="text" class="form-control" name="name" id="nama-lengkap" placeholder="wibaku" value="@auth {{ Auth::user()->name }} @endauth" required>
                         @error('name')
                             <div class="valid-feedback d-flex text-danger">
                                 {{ $message }}
@@ -67,7 +67,7 @@
           
                       <div class="col-12">
                         <label for="email" class="form-label">Email</span></label>
-                        <input type="email" class="form-control" id="email" name="email" value="{{ Auth::user()->email }}" placeholder="wibaku@example.com">
+                        <input type="email" class="form-control" id="email" name="email" value="@auth {{ Auth::user()->email }}  @endauth" placeholder="wibaku@example.com">
                         @error('email')
                             <div class="valid-feedback d-flex text-danger">
                                 {{ $message }}

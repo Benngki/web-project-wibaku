@@ -36,7 +36,7 @@
         <section id="sejarah" class="bg-light">
             <div class="container w-100 d-flex py-4">
                 <div class="row">
-                    <div class="col-12 col-lg-4 d-flex align-items-center">                        
+                    <div class="col-12 col-md-5  d-flex align-items-center">                        
                         <img class="w-100 br-1" src="{{ asset('assets/img/Candi Badut Hitam _ Putih.png') }}" alt="Candi Badut">
                     </div>
                     <div class="col">                        
@@ -58,7 +58,7 @@
         <section id="pesan-tiket" class="bg-gold">
             <div class="container py-4">
                 <div class="row">
-                    <div class="col-12 col-lg-8 order-last order-lg-first">
+                    <div class="col-12 col-md-7  order-last order-lg-first">
                         <p class="font-bebasNeue display-5 mb-0 d-none d-lg-block">RP 10.000</p>
                         <p class="text-justify pt-2">&emsp;&emsp;&emsp;Candi Badut menawarkan lokasi foto yang instagramable. Selain itu, Candi Badut dapat menjadi tempat rekreasi keluarga Anda. Tunggu apa lagi, segera pesan tiket Candi Badut dengan klik tombol “Pesan Sekarang” di bawah ini.</p>
                         <div class="d-flex align-items-center gap-2">
@@ -66,8 +66,8 @@
                             <p class="font-bebasNeue display-5 mb-0 d-lg-none d-inline  ">RP 10.000</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <img class="w-100 h-100 br-1" src="{{ asset('assets/img/Candi Badut (2) Hitam _ Putih.png') }}" alt="Candi Badut">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-100 br-1" src="{{ asset('assets/img/Candi Badut (2) Hitam _ Putih.png') }}" alt="Candi Badut">
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
         <section id="bawa-saya-ke-sana" class="bg-light">
             <div class="container w-100 d-flex py-4">
                 <div class="row">
-                    <div class="col-12 col-lg-4 d-flex align-items-center">                        
+                    <div class="col-12 col-md-5  d-flex align-items-center">                        
                         <img class="w-100 br-1" src="{{ asset('assets/img/Candi Badut (3) Hitam _ Putih.png') }}" alt="Candi Badut">
                     </div>
                     <div class="col">                        
@@ -92,12 +92,12 @@
         <section id="stan-foto" class="bg-gold">
             <div class="container py-4">
                 <div class="row">
-                    <div class="col-12 col-lg-8 order-last order-lg-first">
+                    <div class="col-12 col-md-7  order-last order-lg-first">
                         <p class="text-justify pt-2 pt-lg-0">&emsp;&emsp;&emsp;Buat Anda yang belum bisa ke Candi Badut, kami ada solusinya. Gunakan filter instagram kami untuk melakukan swafoto atau selfie dengan latar belakang atau background Candi Badut. Bukan hanya itu saja, masih banyak loh filter-filter lainnya yang menarik untuk Anda gunakan. Untuk memudahkan Anda mengenai bagaimana cara atau langkah-langkah penggunaan filter di instagram, klik tombol “Selengkapnya” di bawah ini. Jangan lupa juga, follow atau ikuti akun media sosial WiBaKu.</p>
                         <a role="button" href="{{ url('/objek-wisata/candi-badut/stan-foto') }}" class="btn bg-light br-1 p-3">Selengkapnya</a>
                     </div>
-                    <div class="col">
-                        <img class="w-100 h-100 br-1" src="{{ asset('assets/img/Candi Badut (4) Hitam _ Putih.png') }}" alt="Candi Badut">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-100 br-1" src="{{ asset('assets/img/Candi Badut (4) Hitam _ Putih.png') }}" alt="Candi Badut">
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
         <section id="augmented-reality" class="bg-light">
             <div class="container w-100 d-flex py-4">
                 <div class="row">
-                    <div class="col-12 col-lg-4 d-flex align-items-center">                        
+                    <div class="col-12 col-md-5  d-flex align-items-center">                        
                         <img class="w-100 br-1" src="{{ asset('assets/img/Candi Badut (5) Hitam _ Putih.png') }}" alt="Candi Badut">
                     </div>
                     <div class="col">                        
@@ -122,12 +122,12 @@
         <section id="tur-virtual-360" class="bg-gold">
             <div class="container py-4">
                 <div class="row">
-                    <div class="col-12 col-lg-8 order-last order-lg-first">
+                    <div class="col-12 col-md-7  order-last order-lg-first">
                         <p class="text-justify pt-2 pt-lg-0">&emsp;&emsp;&emsp;Dunia virtual menjadi salah satu solusi yang tepat jika Anda belum bisa berkunjung atau berwisata ke Candi Badut. WiBaKu menyediakan fitur tur virtual secara 360° untuk Anda yang ingin berkunjung atau berwisata ke Candi Badut melalui dunia virtual. Nantinya, Anda dapat melihat-lihat bangunan Candi Badut baik dari corak, artefak, hingga bagaimana lingkungan di sekitar Candi Badut secara bebas atau 360°. Tunggu apa lagi, segera klik tombol “Tur Virtual 360°” untuk masuk ke dunia virtual dari Candi Badut.</p>
                         <a role="button" href="https://www.google.com/maps/place/Candi+Badut/@-7.9576568,112.598876,3a,75y,65.69h,86.45t/data=!3m8!1e1!3m6!1sAF1QipPueuOdnV8rSHMhn2DKVpA3blLJiMyj9EvCguZh!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPueuOdnV8rSHMhn2DKVpA3blLJiMyj9EvCguZh%3Dw203-h100-k-no-pi-11.5916395-ya124.05145-ro0-fo100!7i8192!8i4096!4m5!3m4!1s0x0:0x95fdf34c20fb4d51!8m2!3d-7.9577654!4d112.5986182" target="_blank" class="btn bg-light br-1 p-3">Tur Virtual 360°</a>
                     </div>
-                    <div class="col">
-                        <img class="w-100 h-100 br-1" src="{{ asset('assets/img/Candi Badut Hitam & Putih (1920 x 980).png') }}" alt="Candi Badut">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-100 br-1" src="{{ asset('assets/img/Candi Badut Hitam & Putih (1920 x 980).png') }}" alt="Candi Badut">
                     </div>
                 </div>
             </div>
@@ -137,41 +137,43 @@
             <div class="container py-4 d-flex flex-column justify-content-center align-items-center h-100">
                 <h1 class="text-center font-bebasNeue display-3">GALERI FOTO</h1>
 
-                <div>
-                    <div id="galeri-foto-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <div class="row">
+                    <div class="offset-md-2 col-md-8">
+                        <div id="galeri-foto-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active          ">
+                                    <img src="{{ asset('assets/img/Candi Badut (1).jpg') }}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item          ">
+                                    <img src="{{ asset('assets/img/Candi Badut (2).jpg') }}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item          ">
+                                    <img src="{{ asset('assets/img/Candi Badut (3).jpg') }}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item          ">
+                                    <img src="{{ asset('assets/img/Candi Badut (4).jpg') }}" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item          ">
+                                    <img src="{{ asset('assets/img/Candi Badut (5).jpg') }}" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active          ">
-                                <img src="{{ asset('assets/img/Candi Badut (1).jpg') }}" class="d-block" alt="...">
-                            </div>
-                            <div class="carousel-item          ">
-                                <img src="{{ asset('assets/img/Candi Badut (2).jpg') }}" class="d-block" alt="...">
-                            </div>
-                            <div class="carousel-item          ">
-                                <img src="{{ asset('assets/img/Candi Badut (3).jpg') }}" class="d-block" alt="...">
-                            </div>
-                            <div class="carousel-item          ">
-                                <img src="{{ asset('assets/img/Candi Badut (4).jpg') }}" class="d-block" alt="...">
-                            </div>
-                            <div class="carousel-item          ">
-                                <img src="{{ asset('assets/img/Candi Badut (5).jpg') }}" class="d-block" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#galeri-foto-carousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>

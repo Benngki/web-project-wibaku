@@ -76,7 +76,7 @@
             </div>
         </section>
         <section class="min-vh-90 vh-lg-90">
-            <div class="container pb-4 px-4 pt-4 py-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
+            <div class="container-fluid container-md px-4 px-md-0 pt-4 py-lg-4 d-flex flex-column align-items-center justify-content-center h-100">
                 <img class="w-7r mb-4" src="{{ asset('assets/img/Logo Candi Badut Hitam Polosan.png') }}" alt="Logo Candi Badut Hitam">
                 
                 <div class="row gap-2 mb-3">

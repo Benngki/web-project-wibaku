@@ -513,7 +513,7 @@ main#candi_badut section#testimoni .container {
 /* 
     Carousel On Candi Badut Page
 */
-#galeri-foto > div > div {
+/* #galeri-foto > div > div {
     max-width: min-content;
 }
 
@@ -527,7 +527,7 @@ main#candi_badut section#testimoni .container {
     #galeri-foto-carousel > div.carousel-inner > div > img {
         max-height: 65vmin;
     }    
-}
+} */
 
 /* start of Page sejarah candi badut*/
 /* a.prev-button {

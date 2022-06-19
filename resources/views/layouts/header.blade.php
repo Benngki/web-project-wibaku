@@ -24,8 +24,6 @@
               <ul class="navbar-nav">          
                 @auth
                   <li class="nav-item dropdown">
-                    {{-- <a class="nav-link" href="#">{{ Auth::user()->name }}
-                    </a> --}}
                     
                     <a class="nav-link dropdown-toggle text-truncate" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"  data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{ Auth::user()->name }}">
                       <img class="img-profile rounded-circle" src="{{ asset('assets/img/anonym.jpg') }}">
